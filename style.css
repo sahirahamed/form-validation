@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(47, 213, 231);
+}
+.form {
+  margin-left: 500px;
+  margin-top: 50px;
+  height: 500px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control i {
+  top: 143px;
+  left: 796px;
+  position: absolute;
+  visibility: hidden;
+}
+.form-control i.fa-xmark {
+  color: red;
+}
+.form-control i.fa-check {
+  color: green;
+}
+.form-control.error i.fa-xmark {
+  border-color: red;
+  visibility: visible;
+}
+.form-control small {
+  margin-top: 20px;
+  color: red;
+  font-size: 16px;
+  font-weight: bolder;
+  visibility: hidden;
+}
+.form-control.error {
+  border-color: red;
+}
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.success i.fa-check {
+  border-color: green;
+  visibility: visible;
+}
+.form-control.success {
+  border-color: green;
+}
+.form-control input {
+  /* padding: 6px 6px; */
+  position: relative;
+  height: 20px;
+  width: 300px;
+  margin-top: 2px;
+  border-radius: 10px;
+}
+.form-control.error input {
+  /* padding: 6px 6px; */
+  border-color: red;
+}
+.form-control.success input {
+  /* padding: 6px 6px; */
+  border-color: green;
+}
+.form-control {
+  margin-top: 10px;
+  font-weight: bolder;
+}
+#submit {
+  background-color: deeppink;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border-radius: 15px;
+}
